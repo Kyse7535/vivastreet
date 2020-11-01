@@ -15,7 +15,7 @@ body {
 }
 
 .side_bar {
-    width: 50%;
+    width: 60%;
     background-color: #9e9e9e;
     display: none;
 }
@@ -52,10 +52,11 @@ header {
 .logo,
 .publication {
     text-align: center;
+    margin-top: 5%;
 }
 
 .publication {
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .publication a {
@@ -107,11 +108,7 @@ main li {
 }
 
 main li i {
-    padding: 0 1%;
-}
-
-main li span {
-    padding: 0 2%;
+    padding: 0 1% 0 0;
 }
 
 .fa-plus-circle {
@@ -121,10 +118,12 @@ main li span {
 main p {
     margin: 5% auto;
     text-align: center;
+    font-size: 12px;
 }
 
-main p span {
+main span {
     font-size: 12px;
+    padding: 0 0 0 1%;
 }
 
 main div {
@@ -147,8 +146,9 @@ main div a {
     display: block;
     padding: 1% 2%;
     border-bottom: 1px solid #fff;
-    font-size: 17px;
 }
 
 
 /*main */
+
+@media (min-width: 768px) {}
