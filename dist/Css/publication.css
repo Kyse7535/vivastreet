@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: none;
+    height: auto;
+}
+
+header .nav_bar {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+}
+
+.nav_bar ul,
+.nav_bar li {
+    display: inline-block;
+    margin: 0;
+}
+
+.nav_bar li {
+    list-style-type: none;
+}
+
+.nav_bar li a {
+    color: orangered;
+    font-weight: 500;
+}
+
+.logo {
+    display: inline-block;
+    width: 10%;
+    margin: 0;
+    padding-top: 1%;
+}
+
+.nav_bar img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    background-color: #fafafa;
+    padding: 3% 0;
+}
+
+form {
+    border: 1px solid #000;
+    width: 90%;
+    margin: 0 auto;
+    min-width: 300px;
+}
+
+form table {
+    padding: 2% 3%;
+    width: 100%;
+}
+
+form tr {
+    width: 100%;
+}
+
+form td {
+    padding: 2% 0;
+}
+
+form h5 {
+    border-bottom: 1px solid #000;
+    font-weight: 500;
+    padding: 1% 2%;
+    background-color: #fff;
+}
+
+table td:first-child {
+    text-align: right;
+    padding: 0 2%;
+    width: 30%;
+}
+
+table label {
+    margin: 0;
+    width: 100%;
+}
+
+form .condition {
+    padding: 2% 10%;
+}
+
+.table1 input,
+select,
+textarea {
+    width: 80%;
+}
+
+.condition input[type="submit"] {
+    padding: 5px 10px;
+    color: #fff;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    margin: 3% 0;
+}
+
+form .inner_h5 {
+    border-top: 1px solid #000;
+}
+
+form .for_checkbox {
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    form,
+    header .nav_bar {
+        width: 50%;
+    }
+}

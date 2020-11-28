@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publication</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="Css/publication.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav_bar">
+            <a href="index.html" class="logo"><img src="./Css/logo.png" alt="logo" /></a>
+            <ul>
+                <li>
+                    <a href="connexion.html">Mon compte</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <form action="">
+            <h5>Publier votre annonce</h5>
+            <table class="table1">
+                <tr>
+                    <td><label for="cat">categorie </label></td>
+                    <td><select name="categorie" id="cat">
+                <option value="null">Selectionner votre actegorie</option>
+            </select></td>
+                </tr>
+                <tr>
+                    <td><label for="quartier">Quartier </label></td>
+                    <td><input type="text" name="quartier" id="quartier"></td>
+                </tr>
+                <tr>
+                    <td><label for="titre">Titre de l'annonce </label></td>
+                    <td><input type="text" name="titre" id="titre"></td>
+                </tr>
+                <tr>
+                    <td><label for="description">Description </label></td>
+                    <td><textarea name="description" id="description" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td> <label for="prix">Prix </label></td>
+                    <td> <input type="text" name="prix" id="prix"></td>
+                </tr>
+            </table>
+
+            <h5 class="inner_h5">Vos informations personnelles</h5>
+            <table>
+                <tr>
+                    <td><label for="tel">Telephone </label></td>
+                    <td><input type="text" name="tel" id="tel"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email </label></td>
+                    <td> <input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td> <label for="mdp">Mot de passe </label></td>
+                    <td> <input type="password" name="mdp" id="mdp"></td>
+                </tr>
+            </table>
+
+            <h5 class="inner_h5">Publier votre annonce </h5>
+            <div class="condition">
+
+                <label for="check" class="for_checkbox"><input type="checkbox" name="check" id="check"> Je souhaite recevoir par email les offres et cadeaux des marques et des partenaires de paye paye</label><br>
+
+                <label for="condition" class="for_checkbox"><input type="checkbox" name="condition" id="condition"> J'accepte les conditions generales</label><br>
+                <input type="submit" value="Publier cette annonce">
+            </div>
+        </form>
+    </main>
+    <footer></footer>
+    <!-- JQuery -->
+    <script type=" text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js ">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js "></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js ">
+    </script>
+    <script src="index.js "></script>
+</body>
+
+</html>

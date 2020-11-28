@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Vivastreet accueil</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="../node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="../node_modules/mdbootstrap/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </head>
@@ -14,16 +19,16 @@
 <body>
     <div class="side_bar">
         <ul>
-            <li><a href="#">Mon compte</a></li>
+            <li><a href="connexion.html">Mon compte</a></li>
             <li><a href="#">Espace pro</a></li>
             <li><a href="#">Aide</a></li>
-            <li class="publish_side_bar"><a href="#">Publier une annonce</a></li>
+            <li class="publish_side_bar"><a href="publication.html">Publier une annonce</a></li>
             <li><a href="#">Contactez-nous</a></li>
             <li><a href="#">Conditions d'utilisation</a></li>
             <li><a href="#">Infos legales</a></li>
             <li><a href="#">Cookies vivastreet</a></li>
             <li><a href="#">Conseils securite</a></li>
-            <li><a href="#">Politique de confidentialite</a></li>
+            <li><a href="#">Politique de confidentialite </a></li>
         </ul>
     </div>
     <div class="content">
@@ -38,13 +43,112 @@
                     <h1>Viva Street</h1>
                 </div>
                 <div class="publication">
-                    <a href="#">Publier une annonce</a>
+                    <a href="publication.html">Publier une annonce</a>
                 </div>
             </div>
 
+            <div class="header_desktop container">
+                <div class=" row">
+                    <div class="col-12 nav_bar px-0">
+                        <a href="index.html" class="logo"><img src="Css/logo.png" alt="logo"></a>
+                        <ul>
+                            <li><a href="#" id="espace_pro">Espace Pro</a></li>
+                            <li><a href="connexion.html">Mon compte</a></li>
+                            <li><a href="#">Aide</a></li>
+                            <li><a href="publication.html" id="btn_publish">Publier une annonce</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="recherche col-12 px-0">
+                        <h1>Petites annonces gratuites</h1>
+                        <form action="" method="POST">
+                            <h5>Que recherchez-vous ?</h5>
+                            <select name="categories">
+                                <option value="">Toutes les catégories</option>
+                                </select>
+
+                            <select name="region">
+                                    <option value="">Toute la france</option>
+                                </select>
+                            <input type="submit" id="btn_search" value="rechercher">
+                        </form>
+                    </div>
+
+                    <div class="list_categories col-12 px-0">
+                        <ul>
+                            <li class="categorie_immobilier">Immobilier</li>
+                            <li class="categorie_emploi">Emploi,<br> formation</li>
+                            <li class="categorie_vehicule">Vehicules,<br> equipements</li>
+                            <li class="categorie_services">Services, aide a la personne</li>
+                            <li class="categorie_cours">Cours, lecons</li>
+                            <li class="categorie_animaux">Animaux</li>
+                            <li class="categorie_plans">Bons plans</li>
+                            <li class="categorie_rencontres">Rencontres</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
         </header>
-        <main>
-            <ul>
+        <main class="container px-0">
+            <div class="list_items_immobilier menu_deroulant">
+                <div class="ventes">
+                    <h6>VENTES IMMOBILIERES</h6>
+                    <ul>
+                        <li><a href="#">Vente maison</a></li>
+                        <li><a href="#">Vente appartement</a></li>
+                        <li><a href="#">Vente Immeubles</a></li>
+                        <li><a href="#">Vente Parkings, garages</a></li>
+                        <li><a href="#">Vente Terrains</a></li>
+                        <li><a href="#">Vente Terres agricoles</a></li>
+                    </ul>
+                </div>
+                <div class="ventes_etranger">
+                    <h6>VENTES ETRANGER</h6>
+                    <ul>
+                        <li><a href="#">Vente portugal</a></li>
+                        <li><a href="#">Vente espagne</a></li>
+                    </ul>
+
+                </div>
+                <div class="ventes_etranger">
+                    <h6>VENTES IMMOBILIERES</h6>
+                    <ul>
+                        <li><a href="#">Vente maison</a></li>
+                        <li><a href="#">Vente maison</a></li>
+                        <li><a href="#">Vente maison</a></li>
+                        <li><a href="#">Vente maison</a></li>
+                        <li><a href="#">Vente maison</a></li>
+                        <li><a href="#">Vente maison</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list_items_emploi menu_deroulant">
+                <h2>Les emplois</h2>
+            </div>
+            <div class="list_items_vehicule menu_deroulant">
+                <h2>Vehicules</h2>
+            </div>
+            <div class="list_items_services menu_deroulant">
+                <h2>Services</h2>
+            </div>
+            <div class="list_items_cours menu_deroulant">
+                <h2>cours, leçons</h2>
+            </div>
+            <div class="list_items_animaux menu_deroulant">
+                <h2>Animaux</h2>
+            </div>
+            <div class="list_items_plans menu_deroulant">
+                <h2>Bons plans</h2>
+            </div>
+            <div class="list_items_rencontres menu_deroulant">
+                <h2>rencontres</h2>
+            </div>
+
+
+
+            <ul class="list_mobile">
                 <li class="immobilier"><i class="fas fa-home "></i> <span>Immobilier</span> <i class="fas fa-plus-circle "></i></li>
                 <div id="immobilier">
                     <ul>
@@ -200,19 +304,21 @@
                 </div>
             </ul>
             <div class="latest_news">
-                <p>Dernière annonces dans :
+                <p> Dernière annonces dans :
                     <a href="Immobilier >"></a>
                 </p>
-
             </div>
-            <p>Copyright © 2020 Vivastreet - Part of DV International Ltd <br> <span>* Certaines catégories de Vivastreet sont payantes afin d'assurer un service de qualité et sécurisé</span></p>
+            <p id="copyright">Copyright © 2020 Vivastreet - Part of DV International Ltd <br> <span>* Certaines catégories de Vivastreet sont payantes afin d'assurer un service de qualité et sécurisé</span></p>
         </main>
         <footer>
 
         </footer>
     </div>
 
-
+    <script type="text/javascript" src="../node_modules/mdbootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../node_modules/mdbootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="../node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../node_modules/mdbootstrap/js/mdb.min.js"></script>
 </body>
 
 </html>
