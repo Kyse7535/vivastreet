@@ -308,7 +308,7 @@ main #copyright {
 .deroulant {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 1% 2%;
 }
 
